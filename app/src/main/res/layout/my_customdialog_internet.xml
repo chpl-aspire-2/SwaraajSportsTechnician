@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/_36sdp">
+
+        <ImageView
+            android:id="@+id/giffy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/no_connect" />
+
+        <TextView
+            android:id="@+id/can_we"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/giffy"
+            android:layout_centerHorizontal="true"
+            android:text="@string/oh_no"
+            android:textColor="#5b3909"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/can_we"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/no_internet_connection_found_ncheck_your_connection_and_try_again"
+            android:textColor="#5b3909"
+            android:textSize="@dimen/_12ssp" />
+
+
+    </RelativeLayout>
+</FrameLayout>
+

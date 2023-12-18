@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cirImage"
+        app:civ_border_width="1dp"
+        android:src="@drawable/assets"
+        app:civ_border_color="@color/black"
+        app:civ_circle_background_color="@color/white"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"/>
+
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvPName"
+            android:textStyle="bold"
+            android:text="Silent Diesel Generator"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/tvCName"
+            android:textStyle="bold"
+            android:text="Silent Diesel Generator"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:text="Next Maintenance  11 jun 2022"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/tvLName"
+            android:text="Silent Diesel Generator"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:rotation="140"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        app:tint="@color/black" />
+
+</LinearLayout>

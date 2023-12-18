@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/middleLine"
+        android:layout_width="@dimen/_4sdp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/viewLast1"
+        android:layout_centerInParent="true"
+        android:background="@color/grey_20" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:visibility="gone"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:background="@drawable/bg_corner_primary"
+        android:gravity="center"
+        android:padding="@dimen/_3sdp"
+        android:text="18 July"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/llDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_toStartOf="@id/middleLine"
+        android:background="@drawable/corner_white_complaint_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_7sdp">
+
+            <TextView
+                android:id="@+id/tvComplainSocietyDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_40"
+                android:textSize="@dimen/_10ssp"
+                app:fontName="OpenSans_Regular" />
+
+            <TextView
+                android:id="@+id/tvComplainSocietyMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:fontName="OpenSans_Regular" />
+
+            <com.swaraajsports.technician.exoplayer.ExoPlayerView
+                android:id="@+id/andExoPlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:exo_aspect_ratio="aspect_mp3"
+                android:visibility="gone"
+                app:exo_full_screen="false"
+                app:exo_play_when_ready="false"
+                app:exo_resize_mode="Fit"
+                app:exo_show_controller="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvComplainStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_corner_green_complaint_bg"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:text="Open"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:fontName="OpenSans_Bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_toStartOf="@id/middleLine"
+        android:id="@+id/rel"
+        android:layout_below="@id/llDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/ivComplain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:scaleType="centerInside"
+        android:background="@color/white"
+        android:src="@drawable/logo" />
+
+        <ImageView
+            android:background="@color/overlay_dark_20"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/iv_paly"
+            android:src="@drawable/ic_play"
+            android:padding="@dimen/_14sdp"
+            android:scaleType="fitCenter"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_80sdp"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/viewLast"
+        android:layout_below="@id/rel"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"/>
+
+    <View
+        android:id="@+id/viewLast1"
+        android:layout_below="@id/viewLast"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/imgArrowTriangle"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_below="@id/tvDate"
+        android:rotation="180"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_minus22sdp"
+        android:layout_toEndOf="@id/llDetails"
+        android:src="@drawable/complaint_left_triangle" />
+
+
+    <ImageView
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_below="@id/imgArrowTriangle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:src="@drawable/ic_business"
+       app:tint="@color/primary_icon_color_transparent_bg" />
+
+</RelativeLayout>

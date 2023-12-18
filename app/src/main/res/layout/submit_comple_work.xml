@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_1sdp">
+
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_160sdp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/addphotos" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/inputUnitprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColorHint="@android:color/black"
+            android:textSize="17.80dp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_4sdp"
+            android:id="@+id/inputMinimumPrice"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColorHint="@android:color/black"
+            android:textSize="17.80dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:background="@drawable/box"
+            android:id="@+id/tvPrevUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColorHint="@android:color/darker_gray">
+
+            <com.ajitmaurya.basicsetup.view.CustomEditText
+                android:id="@+id/etNoofUnitsPrv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:digits="1234567890"
+                android:hint="Amount"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="7"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="TextFields" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:id="@+id/tvCurrUnit"
+            android:background="@drawable/box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/darker_gray">
+
+            <com.ajitmaurya.basicsetup.view.CustomEditText
+                android:id="@+id/etNoofUnits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:hint="Remark"
+                android:lines="2"
+                android:maxLines="4"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="TextFields,TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:background="@drawable/box"
+            android:id="@+id/lin_bill_cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_bill_pay_file"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:paddingLeft="@dimen/_4sdp"
+                android:text="Attachment"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:textColor="@color/grey_90"
+                android:textSize="@dimen/_12ssp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/tv_bill_pay_amount"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                   android:src="@drawable/ic_baseline_attachment_24" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/capsule_shape_red"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+
+
+    <Button
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/capsule_shape_colorprimery"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+
+</LinearLayout>

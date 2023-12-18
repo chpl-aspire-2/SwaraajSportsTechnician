@@ -1,0 +1,99 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Swaraaj Sports Technician</string>
+    <string name="ok">Ok</string>
+
+    <string name="oh_no">Oh No !</string>
+    <string name="no_internet_connection_found_ncheck_your_connection_and_try_again">No internet connection found.\ncheck your connection and try again.</string>
+
+    <string name="please_select_city">Please select city</string>
+    <string name="search_city">Search City</string>
+    <string name="no_city_found">No city found</string>
+    <string name="please_select_state">Please select state</string>
+    <string name="search_state">Search State</string>
+    <string name="no_state_found">No state found</string>
+    <string name="search_country">Search Country</string>
+
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="next">Next</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="select_area_name">Select area name</string>
+    <string name="done">Done</string>
+
+
+    <string name="no_country_found">No country found !</string>
+    <string name="company_not_found">Company not found</string>
+    <string name="no_internet_connection">No Internet Connection!</string>
+
+    <string name="vpn_connection">Network connection problem can\'t connect with server, Make you sure your VPN is off &amp; try again later.</string>
+    <string name="search_your_society">Search your society</string>
+    <string name="retry">Retry</string>
+    <string name="search_association">Search society</string>
+    <string name="no_association_found">No society found</string>
+    <string name="grey_500" tools:ignore="ReferenceType">@color/grey_500</string>
+    <string name="colorPrimary" tools:ignore="ReferenceType">@color/colorPrimary</string>
+
+
+    <string name="speech_not_supported">Sorry! Your device does not support speech input</string>
+    <string name="speech_prompt">Say something...</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Continue">Continue</string>
+    <string name="society_title">Title</string>
+
+    <string name="select_other_building">Select Other society</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="otp_verification">OTP VERIFICATION</string>
+    <string name="relax_we_will_automatically_validate_otp">Relax. We will automatically validate OTP</string>
+    <string name="phone_number">Mobile Number</string>
+    <string name="please_enter_otp_below">Please enter OTP below</string>
+    <string name="resend_code">Resend OTP</string>
+    <string name="no_event_found">No event found</string>
+    <string name="request_for_close">Request For Close</string>
+
+
+
+    <string-array name="month1">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="previous">Go to previous</string>
+    <string name="next2">Go to next</string>
+    <string name="calendar">Calendar</string>
+    <string name="complaints"><u>Complaints</u></string>
+    <string name="assets"><u>Assets</u></string>
+    <string name="attendance"><u>Attendance</u></string>
+    <string name="todaysmaintenance"><u>Today&quot;s Maintenance</u></string>
+    <string name="currentassignlist"><u>Current Assign List</u></string>
+
+    <string name="app_update_string">Its time to Upgrade to the latest\nversion of our application to get the\nbest experience</string>
+    <string name="notification_per"><![CDATA["Send notification permission is required"]]></string>
+
+
+
+
+
+
+
+
+</resources>

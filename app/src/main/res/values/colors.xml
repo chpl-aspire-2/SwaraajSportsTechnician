@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#151515</color>
+    <color name="colorPrimaryDark">#151515</color>
+    <color name="colorAccent">#515252</color>
+    <color name="color515151">#000000</color>
+    <color name="colorPrimaryAlpha">#26151515</color>
+    <color name="colorPrimaryAlphaSolid">#555555</color>
+    <color name="colorPrimaryAlpha25">#40151515</color>
+    <color name="colorPLite">#555555</color>
+    <color name="colorE">#c4c4c4</color>
+    <color name="colorPrimarylite">#555555</color>
+    <color name="blackTransparent">#07DDDDDD</color>
+
+
+    <!--   <color name="colorPrimary">#FAEFFC</color>
+       <color name="colorPrimaryAlpha">#26FAEFFC</color>
+       <color name="colorPrimaryAlphaSolid">#40FAEFFC</color>
+       <color name="colorPrimaryAlpha25">@color/grey_10</color>
+       <color name="colorPLite">#40FAEFFC</color>
+       <color name="colorAccent">@color/black</color>
+       <color name="colorPrimaryDark">#692C77</color>
+       <color name="colorE">#c4c4c4</color>
+       <color name="colorPrimarylite">#BFFAEFFC</color>
+       <color name="blackTransparent">#07DDDDDD</color>
+       <color name="color515151">#515151</color>
+
+   -->
+
+    <color name="textColorPrimary">@color/grey_80</color>
+    <color name="textColorSecondary">@color/colorPrimary</color>
+
+    <color name="textPrimaryColor">@color/grey_80</color>
+    <color name="colorSecondary">@color/grey_80</color>
+
+    <color name="complaint_open">#334CAF50</color>
+    <color name="complaint_closed">#339575CD</color>
+    <color name="complaint_inprocess">#331976D2</color>
+    <color name="complaint_reopen">#33F44336</color>
+
+    <color name="complaint_open_text">#4CAF50</color>
+    <color name="complaint_inprocess_text">#1976D2</color>
+    <color name="complaint_reopen_text">#F44336</color>
+
+
+
+
+
+    <color name="activityBackgroundColor">#F9F9FC</color>
+
+    <color name="progressBarColor">@color/colorPrimary</color>
+
+    <color name="defultIconTintColor">#4D4D4D</color>
+
+
+    <color name="colorPrimaryLightSelect">#99692C77</color>
+
+
+
+    <color name="colorPrimaryVariant">@color/purple_700</color>
+    <color name="colorOnPrimary">@color/white</color>
+
+    <color name="color_BG">#eeeeee</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="close_color">#EB3E3D</color>
+    <color name="close_bg_color">#FADFDF</color>
+    <color name="reopen_bg_color">#E2F3FF</color>
+    <color name="reopen_color">#2F648E</color>
+    <color name="open_color">#2D7D48</color>
+    <color name="open_bg_color">#EDF7EE</color>
+    <color name="wip_color">#FF8A00</color>
+    <color name="wip_bg_color">#FFE0BB</color>
+
+    <color name="card_bg_color">#EDEDED</color>
+
+    <color name="gray">#7C7C7C</color>
+
+
+    <color name="assets_all">#F1C8C8</color>
+    <color name="maintainable_all">#E2F3FF</color>
+    <color name="completed_all">#EDF7EE</color>
+    <color name="pending_all">#FFE0BB</color>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_10"
+    tools:context=".selectsociety.SelectSocietyActivity">
+
+    <RelativeLayout
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_260sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_no_item_city">
+    </RelativeLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/selectSocietyActivityadd_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:elevation="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/selectSocietyActivitysv_society"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/white"
+            android:focusable="false"
+            android:textSize="@dimen/_12ssp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search Society"
+            app:searchIcon="@null" />
+
+            <ImageView
+                android:id="@+id/iv_mice"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_mic_24" />
+
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectSocietyActivityRecy_society_list"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/selectSocietyActivityBtn_continue"
+        android:layout_below="@id/selectSocietyActivityadd_bar"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:elevation="@dimen/_6sdp"
+        android:background="@color/white"
+        android:id="@+id/selectSocietyActivityPs_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_134sdp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/selectSocietyActivityRel_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectSocietyActivityadd_bar">
+
+        <ImageView
+            android:id="@+id/selectSocietyActivityIv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_society_bg" />
+
+        <TextView
+            android:id="@+id/selectSocietyActivityTv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectSocietyActivityIv"
+            android:gravity="center"
+            android:text="@string/search_your_society"
+            android:textColor="@color/grey_60"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/selectSocietyActivityBtn_continue"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/btn_rounded_disable"
+        android:enabled="false"
+        android:text="@string/Continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+</RelativeLayout>

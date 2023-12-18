@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <color name="text_color_white">@color/black</color>
+    <color name="text_color_black">@color/white</color>
+
+    <color name="primary_text_color_transparent_bg">@color/black</color>
+    <color name="primary_text_color_dark_bg">@color/white</color>
+
+    <color name="primary_icon_color_transparent_bg">@color/black</color>
+    <color name="primary_icon_color_dark_bg">@color/white</color>
+-->
+
+    <color name="text_color_white">@color/white</color>
+    <color name="text_color_black">@color/black</color>
+
+    <color name="primary_text_color_transparent_bg">@color/colorPrimary</color>
+    <color name="primary_text_color_dark_bg">@color/colorPrimary</color>
+
+    <color name="primary_icon_color_transparent_bg">@color/colorPrimary</color>
+    <color name="primary_icon_color_dark_bg">@color/colorPrimary</color>
+</resources>
